@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a2dam.tema3ex.MainActivity">
+
+    <TextView
+        android:id="@+id/dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="183dp"
+        android:text="Dia:"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/diatxt"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dia"
+        android:layout_toEndOf="@+id/dia" />
+
+    <TextView
+        android:id="@+id/mes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mes: "
+        android:layout_above="@+id/guardar"
+        android:layout_alignEnd="@+id/mostrarmes" />
+
+    <EditText
+        android:id="@+id/mestxt"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mes"
+        android:layout_toEndOf="@+id/mes" />
+
+    <TextView
+        android:id="@+id/dinero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dinero:"
+        android:layout_alignBottom="@+id/mestxt"
+        android:layout_alignEnd="@+id/mostrardinero" />
+
+    <EditText
+        android:id="@+id/dinerotxt"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dinero"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/diatxt"
+        android:layout_marginTop="89dp"
+        android:layout_toEndOf="@+id/dia"
+        android:text="Guardar" />
+
+    <Button
+        android:id="@+id/mostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/guardar"
+        android:layout_alignStart="@+id/dinero"
+        android:text="Mostrar" />
+
+    <TextView
+        android:id="@+id/mostrarmes"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/mostrardia"
+        android:layout_toEndOf="@+id/guardar" />
+
+    <TextView
+        android:id="@+id/mostrardinero"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/mostrarmes"
+        android:layout_alignBottom="@+id/mostrarmes"
+        android:layout_toStartOf="@+id/dinerotxt" />
+
+    <TextView
+        android:id="@+id/mostrardia"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/guardar"
+        android:layout_marginBottom="74dp" />
+
+</RelativeLayout>
